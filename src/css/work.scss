@@ -1,0 +1,48 @@
+.work {
+  padding: 90px 0;
+  background: #353535;
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+
+  }
+
+  &__box {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.46);
+    border-radius: 20px;
+  }
+
+  &__slide {
+    position: relative;
+  }
+
+    &__arrow-left {
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      transform: translateY(-45%);
+      cursor: pointer;
+    }
+
+    &__arrow-right {
+      position: absolute;
+      right: -40px;
+      top: 50%;
+      transform: translateY(-45%);
+      cursor: pointer;
+    }
+  }
+
+
+.swiper {
+  padding: 20px 40px;
+}

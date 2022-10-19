@@ -1,0 +1,54 @@
+.price {
+  padding: 90px 0;
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    margin-top: 60px;
+  }
+
+  &__card {
+    width: calc(25% - 30px);
+    padding: 30px;
+    background: #FAFAFA;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    &-price{
+      width: 109px;
+      background: $orange;
+      padding: 8px 35px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 14px;
+      color: #FFFFFF;
+      position: absolute;
+      top: 0;
+      right: -3px;
+
+    }
+      &-img {
+        width: 100%;
+    }
+    &-title{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 30px;
+    }
+    &-btn{
+      width: 100%;
+      border: 3px solid #FD7900;
+      padding: 10px 86px;
+      background: transparent;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  }
+}

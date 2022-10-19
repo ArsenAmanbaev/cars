@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Montserrat:wght@400;500;600;700;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+$orange: #FD7900;
+
+h1{
+  color: $orange;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-bottom: 80px;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  &__map{
+    display: flex;
+    column-gap: 15px;
+    &__title{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #4D4D4D;
+    }
+    &__link{
+      font-weight: 500;
+      font-size: 16px;
+      color: $orange;
+      text-decoration: underline dashed;
+      text-underline-offset: 10px;
+  }
+}
+  &__right{
+    display: flex;
+    column-gap: 22px;
+  }
+  &__question{
+    font-weight: 500;
+    font-size: 14px;
+    color: #4C4C4C;
+    margin-bottom: 5px;
+  }
+  &__whatsapp{
+    text-align: right;
+    a{
+      font-weight: 700;
+      font-size: 16px;
+      color: #000000;
+    }
+  }
+  &__number{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%
+  }
+  &__menu{
+    display: flex;
+    padding: 17px 58px;
+    border: 2px solid #F0F0F0;
+    border-radius: 25px;
+    justify-content: space-between;
+  }
+  &__link{
+    font-weight: 600;
+    font-size: 18px;
+    color: #4C4C4C;
+  }
+}
+
+
+
+.burger-menu{
+  width: 30px;
+  height: 30px;
+  background: $orange;
+  padding: 7px;
+  border-radius: 8px;
+  display: none;
+  align-items: center;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 99;
+  &__line{
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    position: relative;
+    &::after{
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: -7px;
+      background: #ffffff;
+    }
+    &::before{
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -7px;
+      background: #ffffff;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .burger-menu{
+    display: flex;
+  }
+  .header__right{
+    display: none;
+  }
+  .header__menu{
+    display: none;
+  }
+  .header__menu_active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    background: black;
+    color: white;
+    border-radius: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    a{
+      color: white;
+    }
+  }
+  .header__right_active{
+    display: flex;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    z-index: 91;
+    color: white;
+    .header__question, .header__whatsapp a,
+    .header__number, .header__time{
+      color: white;
+    }
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+$orange: #FD7900;
+
+.orange{
+  color: $orange;
+}
+
+@import "free";
+@import "price";
+@import "work";
+@import "gallery";
+@import "information";
+@import "question";
+@import "contacts";
+@import "example";
+@import "overlay";
+@import "footer";
+
+
+

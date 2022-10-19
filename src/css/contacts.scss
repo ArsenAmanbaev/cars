@@ -1,0 +1,46 @@
+.contacts{
+  padding: 90px 0;
+  background: #fafafa;
+  &__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+  }
+  &__row{
+    display: flex;
+    column-gap: 170px;
+    align-items: center;
+  }
+  &__info{
+    width: 40%;
+    &-list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+    }
+    &-item{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    &-whatsapp{
+      font-weight: 700;
+      font-size: 35px;
+      color: #000000;
+    }
+    &-link{
+      font-weight: 400;
+      font-size: 16px;
+      color: #000000;
+    }
+    &-title{
+      font-weight: 700;
+      font-size: 24px;
+      color: #FF7A00;
+
+    }
+  }
+  &__map{
+    width: 60%;
+  }
+}
